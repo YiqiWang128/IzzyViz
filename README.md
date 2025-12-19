@@ -1,6 +1,6 @@
 ![intro.jpg](images/banner.png)
 # 🔮 IzzyViz: See How Transformers Think
-
+🚀 [Colab Tutorial] (https://colab.research.google.com/drive/1UVop16KAhrC3AYtJ1LRMtx3-ntjvYfh8#scrollTo=GxQP3Xhp7ilP) | 📖 [Medium Introduction] (https://medium.com/@cuizy.ada/rethinking-attention-heatmaps-making-transformer-attention-more-interpretable-with-izzyviz-40d40506995a?postPublishedType=initial)
 ![intro.jpg](images/intro.jpg)
 ![intro.jpg](images/gallery.jpg)
 
