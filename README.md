@@ -1,12 +1,17 @@
 ![intro.jpg](images/banner.png)
 # 🔮 IzzyViz: See How Transformers Think
 
+<p align="center">
+🚀 <a href="https://colab.research.google.com/drive/1UVop16KAhrC3AYtJ1LRMtx3-ntjvYfh8#scrollTo=GxQP3Xhp7ilP"> Colab Tutorial</a>
+&nbsp; | &nbsp;
+📖 <a href="https://medium.com/@cuizy.ada/rethinking-attention-heatmaps-making-transformer-attention-more-interpretable-with-izzyviz-40d40506995a?postPublishedType=initial"> Medium Introduction</a>
+</p>
+
+
 ![intro.jpg](images/intro.jpg)
 ![intro.jpg](images/gallery.jpg)
 
 **IzzyViz** is a Python library designed to visualize attention scores in [transformer](https://jalammar.github.io/illustrated-transformer/) models. It provides flexible visualization functions that can handle various attention scenarios and model architectures. Additionally, it offers three attention heatmap variants that enable comparisons between two attention matrices, visualize model stability, and track the evolution of attention patterns over training time steps. Lastly, it includes an automatic key region highlighting function to assist users in identifying important attention areas. The output of all functions is provided in a **static** PDF format, making it suitable for direct use in research writing.
-
-👉 Click [here](https://colab.research.google.com/drive/1UVop16KAhrC3AYtJ1LRMtx3-ntjvYfh8#scrollTo=GxQP3Xhp7ilP) for the Colab Tutorial!
 
 ## Table of Contents
 
