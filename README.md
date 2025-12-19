@@ -2,9 +2,9 @@
 # 🔮 IzzyViz: See How Transformers Think
 
 <p align="center">
-🚀 <a href="https://colab.research.google.com/drive/1UVop16KAhrC3AYtJ1LRMtx3-ntjvYfh8#scrollTo=GxQP3Xhp7ilP">Colab Tutorial</a>
+🚀 <a href="https://colab.research.google.com/drive/1UVop16KAhrC3AYtJ1LRMtx3-ntjvYfh8#scrollTo=GxQP3Xhp7ilP"> Colab Tutorial</a>
 &nbsp; | &nbsp;
-📖 <a href="https://medium.com/@cuizy.ada/rethinking-attention-heatmaps-making-transformer-attention-more-interpretable-with-izzyviz-40d40506995a?postPublishedType=initial">Medium Introduction</a>
+📖 <a href="https://medium.com/@cuizy.ada/rethinking-attention-heatmaps-making-transformer-attention-more-interpretable-with-izzyviz-40d40506995a?postPublishedType=initial"> Medium Introduction</a>
 </p>
 
 
