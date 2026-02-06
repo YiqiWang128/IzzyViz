@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What color is the grass in Wacky-Town?",
+    "answer": "Bright blue",
+    "context_hint": "The grass in Wacky-Town was bright blue"
+  },
+  {
+    "id": 2,
+    "question": "What sound does Tommy's cat, Rex, make?",
+    "answer": "It barks like a dog",
+    "context_hint": "When Rex was hungry or happy, he made a loud 'bark' sound"
+  },
+  {
+    "id": 3,
+    "question": "What is the name of the treasure Tommy is looking for?",
+    "answer": "The Silver Fork",
+    "context_hint": "The treasure was a magical item called the 'Silver Fork'"
+  },
+  {
+    "id": 4,
+    "question": "In what year did Mr. Piggles lose his treasure?",
+    "answer": "2015",
+    "context_hint": "Mr. Piggles had lost his favorite fork exactly ten years ago, in the year 2015"
+  },
+  {
+    "id": 5,
+    "question": "What did Tommy pack in his backpack instead of food?",
+    "answer": "Three heavy rocks and a rubber duck",
+    "context_hint": "Instead, he packed three heavy rocks and a rubber duck"
+  },
+  {
+    "id": 6,
+    "question": "What liquid filled the wide river at the edge of town?",
+    "answer": "Cold orange juice",
+    "context_hint": "It was filled with cold orange juice"
+  },
+  {
+    "id": 7,
+    "question": "Where were the fish in the river?",
+    "answer": "Flying in the air above the juice",
+    "context_hint": "The fish were actually flying in the air above the juice"
+  },
+  {
+    "id": 8,
+    "question": "What is the robot Zim-Zam made of?",
+    "answer": "Old tin cans",
+    "context_hint": "Zim-Zam was made of old tin cans"
+  },
+  {
+    "id": 9,
+    "question": "What are the trees in the Silent Forest made of?",
+    "answer": "Candy canes",
+    "context_hint": "The trees in this forest were made of candy canes"
+  },
+  {
+    "id": 10,
+    "question": "What is strange about the noise level in the Silent Forest?",
+    "answer": "It is extremely loud because the trees sing opera",
+    "context_hint": "The strange thing about the Silent Forest was that it was extremely loud"
+  },
+  {
+    "id": 11,
+    "question": "What word did Tommy have to shout to open the cave door?",
+    "answer": "Banana",
+    "context_hint": "Tommy had to knock on the rock five times and shout the word 'Banana'"
+  },
+  {
+    "id": 12,
+    "question": "What is the name of the creature guarding the cave?",
+    "answer": "The Laughing Bear",
+    "context_hint": "The cave was guarded by a creature called the 'Laughing Bear'"
+  },
+  {
+    "id": 13,
+    "question": "According to the story, what is the answer to 'two plus two' in Wacky-Town?",
+    "answer": "Seven",
+    "context_hint": "He looked at the bear and confidently said, 'The answer is seven'"
+  },
+  {
+    "id": 14,
+    "question": "What color light was the Silver Fork glowing with?",
+    "answer": "Soft green light",
+    "context_hint": "It was glowing with a soft green light"
+  },
+  {
+    "id": 15,
+    "question": "What grows on the stems in the Field of Sleep?",
+    "answer": "Soft pillows",
+    "context_hint": "The flowers were actually soft pillows growing on stems"
+  },
+  {
+    "id": 16,
+    "question": "What are Mr. Piggles' tears made of?",
+    "answer": "Sweet lemonade",
+    "context_hint": "The tears were not salty water; they were drops of sweet lemonade"
+  },
+  {
+    "id": 17,
+    "question": "What reward did Mr. Piggles give Tommy?",
+    "answer": "A lifetime supply of invisible cookies",
+    "context_hint": "The reward was a lifetime supply of invisible cookies"
+  },
+  {
+    "id": 18,
+    "question": "What was the date on Tommy's calendar when he got home?",
+    "answer": "January 35th",
+    "context_hint": "The date was January 35th"
+  },
+  {
+    "id": 19,
+    "question": "What color shoes does Tommy wear every day?",
+    "answer": "Yellow",
+    "context_hint": "He wore a red hat and yellow shoes every single day"
+  },
+  {
+    "id": 20,
+    "question": "What material was the map drawn on?",
+    "answer": "A piece of old cheese",
+    "context_hint": "He also took a map that was drawn on a piece of old cheese"
+  }
+]

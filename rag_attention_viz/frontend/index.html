@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG + Attention Visualization - The Strange Day of Tommy and the Blue Grass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🔮 RAG + Attention Visualization</h1>
+            <p class="subtitle">Retrieval-Augmented Generation & Attention Visualization System based on "The Strange Day of Tommy and the Blue Grass"</p>
+        </header>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="panel-section">
+                <h2>📝 Query Configuration</h2>
+
+                <!-- Question Selection -->
+                <div class="form-group">
+                    <label for="questionSelect">Select Question:</label>
+                    <select id="questionSelect" class="form-control">
+                        <option value="">Loading...</option>
+                    </select>
+                </div>
+
+                <!-- Custom Question -->
+                <div class="form-group">
+                    <label for="customQuestion">Custom Question:</label>
+                    <input type="text" id="customQuestion" class="form-control" placeholder="Enter your question...">
+                </div>
+
+                <!-- RAG Parameters -->
+                <div class="parameters-grid">
+                    <div class="form-group">
+                        <label for="kRetrieve">Number of Retrieved Docs (k_retrieve): <span id="kRetrieveValue">10</span></label>
+                        <input type="range" id="kRetrieve" min="3" max="20" value="10" class="slider">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kContext">Number of Context Docs (k_context): <span id="kContextValue">3</span></label>
+                        <input type="range" id="kContext" min="1" max="10" value="3" class="slider">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="layer">Attention Layer: <span id="layerValue">-1 (Last)</span></label>
+                        <input type="range" id="layer" min="-1" max="11" value="-1" class="slider">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="head">Attention Head: <span id="headValue">0</span></label>
+                        <input type="range" id="head" min="0" max="11" value="0" class="slider">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button id="queryBtn" class="btn btn-primary">
+                    🚀 Process Query
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-indicator hidden">
+            <div class="spinner"></div>
+            <p>Processing query and generating visualizations...</p>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="results-section hidden">
+            <h2>📊 Results</h2>
+
+            <!-- Query Display -->
+            <div class="query-display">
+                <h3>Query:</h3>
+                <p id="queryText"></p>
+            </div>
+
+            <!-- Answers Comparison -->
+            <div class="answers-comparison">
+                <div class="answer-box no-rag">
+                    <h3>❌ Without RAG</h3>
+                    <div class="answer-content" id="answerNoRAG">
+                        <p>No results yet</p>
+                    </div>
+                </div>
+
+                <div class="answer-box with-rag">
+                    <h3>✅ With RAG</h3>
+                    <div class="answer-content" id="answerWithRAG">
+                        <p>No results yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retrieved Documents -->
+            <div class="retrieved-docs">
+                <h3>📚 Retrieved Documents</h3>
+                <div id="retrievedDocsList" class="docs-list">
+                    <p>No documents retrieved</p>
+                </div>
+            </div>
+
+            <!-- Attention Visualizations -->
+            <div class="visualizations">
+                <h3>🎨 Attention Heatmap Visualizations</h3>
+                <p class="viz-description">
+                    The comparison heatmap shows attention differences between RAG and non-RAG modes.
+                    Cell colors represent attention from non-RAG, while circles show attention from RAG.
+                    Larger circles indicate bigger differences.
+                </p>
+
+                <div class="viz-grid">
+                    <!-- Comparison Heatmap -->
+                    <div class="viz-container">
+                        <h4>Comparison Heatmap (Prefill)</h4>
+                        <div id="comparisonViz" class="viz-content">
+                            <p>Visualization will appear here</p>
+                        </div>
+                    </div>
+
+                    <!-- Individual Heatmaps -->
+                    <div class="viz-container">
+                        <h4>Without RAG (Prefill)</h4>
+                        <div id="noRAGViz" class="viz-content">
+                            <p>Visualization will appear here</p>
+                        </div>
+                    </div>
+
+                    <div class="viz-container">
+                        <h4>With RAG (Prefill)</h4>
+                        <div id="withRAGViz" class="viz-content">
+                            <p>Visualization will appear here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>🔍 Decode-Stage Attention (Generated → Input)</h3>
+                <p class="viz-description">
+                    Decode attention shows how generated tokens attend to input tokens.
+                    [C] marks RAG context tokens, [G] marks generated tokens.
+                    This visualization highlights how the model uses retrieved context during generation.
+                </p>
+
+                <div class="viz-grid">
+                    <!-- Decode Attention Without RAG -->
+                    <div class="viz-container">
+                        <h4>Decode Attention - Without RAG</h4>
+                        <div id="decodeNoRAGViz" class="viz-content">
+                            <p>Visualization will appear here</p>
+                        </div>
+                    </div>
+
+                    <!-- Decode Attention With RAG -->
+                    <div class="viz-container">
+                        <h4>Decode Attention - With RAG</h4>
+                        <div id="decodeWithRAGViz" class="viz-content">
+                            <p>Visualization will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with IzzyViz | Story: "The Strange Day of Tommy and the Blue Grass"</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

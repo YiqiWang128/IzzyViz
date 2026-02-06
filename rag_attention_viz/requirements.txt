@@ -1,0 +1,23 @@
+# Core Dependencies
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+
+# Web Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+
+# Visualization (IzzyViz is installed from parent directory)
+matplotlib>=3.7.0
+numpy<2.0.0
+pandas>=1.5.0
+
+# Optional: PDF to Image conversion
+# pdf2image>=1.16.0
+# Pillow>=10.0.0
+
+# Utilities
+pydantic>=2.0.0
+python-json-logger>=2.0.0
